@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Welcome to SK Mechanics
+        </title>
+        <link rel = "stylesheet" href="static/login/style.css">
+    </head>
+    <body>
+        <form action="/" class = "wrapper" method="post">
+            <h1>Login</h1>
+
+            <div class="input-box">
+                <input type = "text" placeholder="Username" id = "user-el" autofocus name = "Username">
+                <input type = "password" placeholder="Password" id = "pass-el" name = "Password">
+            </div>
+
+            <div>
+                <button type="submit" id = "button-el">SUBMIT</button>
+            </div>
+
+            <div class = "remember-forgot">
+                <label>
+                    <input type="checkbox">
+                    Remember me?
+                </label>
+                <a href = "{{url_for('create_account')}}">Create Account</a>
+            </div>
+            <div class = "message">
+                <p>{{message}}</p>
+            </div>
+        </form>
+    </body>
+</html>
